@@ -1,3 +1,15 @@
 .footerBackground{
-    background-color:#5DADE2;
+    background-color:#ddf1ff;
 }
+
+ul,a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a,li{
+  color: #888888!important;
+ &:hover{
+  color: black!important;
+ }
+} 
