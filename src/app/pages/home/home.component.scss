@@ -1,11 +1,9 @@
 .hero {
-  // background-image: url('../../../assets/images/pexels-andrea-piacquadio-3779698.jpg');
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/pexels-cottonbro-studio-7579834.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // position: relative;
 }
 
 .mt-80{
@@ -30,4 +28,19 @@ min-height: 200px;
 
 .card-bg{
   background-color: #5DADE2;
+}
+
+// .abt{
+//   border-style: solid;
+//   border-color: #5DADE2;
+//   padding:5px;
+// }
+
+.fs-60{
+  font-size: 60px;
+}
+
+.discovery-img{
+     border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
