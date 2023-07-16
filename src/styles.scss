@@ -69,3 +69,24 @@ ul,a {
   text-decoration: none;
 }
 
+.mt-70{
+  margin-top:70px;
+}
+
+.mb-70{
+  margin-bottom: 70px;
+}
+
+.banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./assets/images/pexels-cottonbro-studio-7579834.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.imageRadius{
+  border-radius: 30px;
+}
+
