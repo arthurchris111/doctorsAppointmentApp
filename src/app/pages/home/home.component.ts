@@ -9,4 +9,8 @@ export class HomeComponent {
   accordionButton() {
     document.getElementById('collapse')?.classList.toggle('show');
   }
+
+  accordionButtonTwo() {
+    document.getElementById('collapseTwo')?.classList.toggle('show');
+  }
 }
