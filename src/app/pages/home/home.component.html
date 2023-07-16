@@ -68,7 +68,7 @@
   <div class="row mt-5 mb-5">
     <div class="col-lg-7 d-flex align-items-center">
       <div class="about px-lg-5">
-        <h2 class="fw-bolder">We always put our patients first</h2>
+        <h2 class="fw-bolder primary">We always put our patients first</h2>
         <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -86,66 +86,104 @@
 </div>
 
 <!-- how it works -->
-<div class="container">
+<div class="container bg-light">
   <div class="row mb-5">
     <div class="col-lg-5 d-flex align-items-center">
       <img src="../../../assets/images/work-img.675546d68eb2667b81e4.png" class="img-fluid" alt="">
     </div>
     <div class="col-lg-7 d-flex align-items-center">
-      <div class="text ms-5">
-        <h5 class="primaryColor">How it Works</h5>
-        <h2 class="fw-bolder">4 easy steps to get your solution</h2>
+      <div class="text ms-lg-5">
+        <h2 class="fw-bolder primary ">4 easy steps to get your solution</h2>
         <div class="row mt-4">
-          <div class="col">
+          <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="d-flex">
               <div class="">
-                <img src="../../../assets/images/search-doctor.png" class="photo" width="60" height="60" alt="image">
+                <img src="../../../assets/images/search-doctor.png" class="photo" width="50" height="50" alt="image">
               </div>
               <div class="ms-3">
-                <h5>Search Doctor</h5>
-                This is some content from a media component. You can replace this with any content and adjust it as
-                needed.
+                <h5 class="primary">Search Doctor</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-md-12 col-sm-12 ">
             <div class="d-flex">
               <div class="">
-                <img src="../../../assets/images/background-check.png" width="60" height="60" alt="image">
+                <img src="../../../assets/images/background-check.png" width="50" height="50" alt="image">
               </div>
               <div class="ms-3">
-                <h5>Check Doctor Profile</h5>
-                This is some content from a media component. You can replace this with any content and adjust it as
-                needed.
+                <h5 class="primary">Check Doctor Profile</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               </div>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col">
+        <div class="row mt-4">
+          <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="d-flex">
               <div class="">
-                <img src="../../../assets/images/search-doctor.png" width="60" height="60" alt="image">
+                <img src="../../../assets/images/schedule.png" width="50" height="50" alt="image">
               </div>
               <div class=" ms-3">
-                <h5>Schedule Appointment</h5>
-                This is some content from a media component. You can replace this with any content and adjust it as
-                needed.
+                <h5 class="primary">Schedule Appointment</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-md-12 col-sm-12 ">
             <div class="d-flex">
               <div class="">
-                <img src="../../../assets/images/background-check.png" width="60" height="60" alt="image">
+                <img src="../../../assets/images/solution.png" width="50" height="50" alt="image">
               </div>
               <div class=" ms-3">
-                <h5>Get Your Solution</h5>
-                This is some content from a media component. You can replace this with any content and adjust it as
-                needed.
+                <h5 class="primary">Get Your Solution</h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- accodion/ frequently asked question -->
+<div class="container">
+  <h2 class="primary fw-bolder text-center">Frequently asked questions</h2>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo" (click)="accordionButton()">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapse" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
         </div>
       </div>
     </div>
