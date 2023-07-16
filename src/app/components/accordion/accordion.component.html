@@ -1,1 +1,43 @@
-<p>accordion works!</p>
+<div class="container">
+  <h2 class="primary fw-bolder text-center">Frequently asked questions</h2>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading">
+        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse" aria-expanded="false" aria-controls="collapseTwo" (click)="accordionButton()">
+          <img src="../../../assets/images/quote.png" class="mb-2 me-2" width="20" height="20" alt="">
+          <h5 class="primary fw-bolder">Are these good doctors?</h5>
+        </button>
+      </h2>
+      <div id="collapse" class="accordion-collapse collapse" aria-labelledby="heading"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Yes! Our online doctors are U.S. Board Certified with verified medical licenses and a professional
+            reputation that we personally research and find in good standing within the medical community. They exhibit
+            expertise and leadership in their field. We also only present doctors who have a beloved bedside manner and
+            maintain stellar patient reviews. We want you to have the best telehealth experience possible. Our
+            philosophy is that if we wouldn't want our family members seeing our doctors, we wouldn't want you to
+            either!</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading">
+        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapse" (click)="accordionButtonTwo()">
+          <img src="../../../assets/images/quote.png" class="mb-2 me-2" width="20" height="20" alt="">
+          <h5 class="primary fw-bolder">What if I already have a doctor that I see in person?</h5>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="heading"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>As a patient, you can still benefit from access to a responsive, trusted HealthTap online doctor — even if
+            you already have a doctor near you that you see in person! A HealthTap doctor is usually more affordable and
+            convenient for most issues. And for the few occasions where you need to see someone in person, you can share
+            your online medical records with your local physicians to pick up where we left off!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
