@@ -2,7 +2,7 @@
 @import 'bootstrap/scss/bootstrap';
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/images/pexels-cottonbro-studio-7579834.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/pexels-cottonbro-studio-4101143.jpg");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,9 +69,3 @@ ul,a {
   text-decoration: none;
 }
 
-a,li{
-  color: #888888!important;
- &:hover{
-  color:#4490c7!important;
- }
-} 

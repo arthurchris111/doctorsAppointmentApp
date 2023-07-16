@@ -9,8 +9,13 @@ export class AccordionComponent {
   accordionButton() {
     document.getElementById('collapse')?.classList.toggle('show');
   }
-
   accordionButtonTwo() {
     document.getElementById('collapseTwo')?.classList.toggle('show');
+  }
+  accordionButtonThree() {
+    document.getElementById('collapseThree')?.classList.toggle('show');
+  }
+  accordionButtonFour() {
+    document.getElementById('collapseFour')?.classList.toggle('show');
   }
 }

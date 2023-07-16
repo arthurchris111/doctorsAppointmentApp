@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="primary fw-bolder text-center">Frequently asked questions</h2>
+  <h2 class="primary fw-bolder text-center mb-4">Frequently asked questions</h2>
   <div class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="heading">
@@ -12,7 +12,7 @@
       <div id="collapse" class="accordion-collapse collapse" aria-labelledby="heading"
         data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <p>Yes! Our online doctors are U.S. Board Certified with verified medical licenses and a professional
+          <p>Yes! Our doctors are U.S. Board Certified with verified medical licenses and a professional
             reputation that we personally research and find in good standing within the medical community. They exhibit
             expertise and leadership in their field. We also only present doctors who have a beloved bedside manner and
             maintain stellar patient reviews. We want you to have the best telehealth experience possible. Our
@@ -36,6 +36,38 @@
             you already have a doctor near you that you see in person! A HealthTap doctor is usually more affordable and
             convenient for most issues. And for the few occasions where you need to see someone in person, you can share
             your online medical records with your local physicians to pick up where we left off!</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading">
+        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapse"
+          (click)="accordionButtonThree()">
+          <img src="../../../assets/images/quote.png" class="mb-2 me-2" width="20" height="20" alt="">
+          <h5 class="primary fw-bolder">Can I use my insurance?</h5>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="heading"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>No</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading">
+        <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapse"
+          (click)="accordionButtonFour()">
+          <img src="../../../assets/images/quote.png" class="mb-2 me-2" width="20" height="20" alt="">
+          <h5 class="primary fw-bolder">What payment methods do you accept?</h5>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>We accept Visacard, Mastercard and Bitcoin.</p>
         </div>
       </div>
     </div>
