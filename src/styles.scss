@@ -90,3 +90,31 @@ ul,a {
   border-radius: 30px;
 }
 
+@media only screen and (max-width: 992px) {
+  .mt-80 {
+    margin-top: 50px;
+  }
+ .fs-80{
+  font-size: 50px;
+ }
+ .mb-80{
+  margin-bottom: 70px;
+ }
+
+}
+
+
+
+// .hoverZoom{
+//   overflow: hidden;
+//   margin: 0 auto;
+// }
+
+// .hoverZoom img {
+//   width: 100%;
+//   transition: 0.5s all ease-in-out;
+// }
+
+// .hoverZoom:hover img {
+//   transform: scale(1.5);
+// }
