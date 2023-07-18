@@ -1,0 +1,42 @@
+label{
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.horizontalLine{
+    border: 1px solid rgb(237, 237, 237);
+}
+
+.forgottenPassword,
+.signUp{
+  font-size: 13px;
+  color: rgb(130, 129, 129);
+}
+
+.forgottenPassword:hover,
+.signUp:hover{
+color: black;
+}
+
+.togglePassword{
+  margin-top: -45px;
+  padding: 10px;
+}
+
+::placeholder {
+  color: rgb(212, 212, 212);
+  opacity: 1;
+  font-size: 13px;
+}
+
+input[type=text],
+input[type=password]{
+  padding: 10px;
+  outline: none;
+  border-color:none;
+}
+
+.fa-sharp{
+ font-size: 12px;
+}
+

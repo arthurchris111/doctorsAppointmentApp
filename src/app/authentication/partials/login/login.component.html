@@ -1,1 +1,64 @@
-<p>login works!</p>
+<div class="container">
+  <div class="row m-0 d-flex justify-content-center align-items-center">
+    <div class="card mt-5">
+      <div class="card-body">
+        <form [formGroup]="login" (ngSubmit)="onSubmit()" class="p-2">
+          <!-- username -->
+          <label for="text" class="">Username</label>
+          <div class="form-item mb-3">
+            <input type="text" autocomplete="off" required class="form-control  shadow-none" formControlName="username"
+              placeholder="Username">
+            <div class="error" *ngIf="(login.get('username')?.invalid && submitted)">
+              <small class="text-danger" *ngIf="login.get('username')?.errors?.['required'] ">
+                First name required
+              </small>
+            </div>
+          </div>
+
+          <!-- password -->
+          <label for="text">Password</label>
+          <div class="form-item mb-3">
+            <input [type]="show?'text':'password'" autocomplete="off" required class="form-control  shadow-none "
+              formControlName="password" placeholder="Password">
+            <span class="togglePassword float-end opacity-75">
+              <span class=" img-fluid" (click)="togglePassword()" aria-hidden="true" *ngIf="!show">
+                <i class="fa-sharp fa-solid fa-eye-slash" style="color: #000000;"></i>
+              </span>
+              <span class="view  img-fluid" (click)="togglePassword()" aria-hidden="true" *ngIf="show">
+                <i class="fa-sharp fa-solid fa-eye" style="color: #000000;"></i>
+              </span>
+            </span>
+            <div class="error" *ngIf="(login.get('password')?.invalid && submitted)">
+              <small class="text-danger" *ngIf="login.get('password')?.errors?.['required'] ">
+                Password required
+              </small>
+            </div>
+          </div>
+
+          <!-- button -->
+          <button class="btn btn-primary w-100 shadow-none" type="submit">Log In</button>
+
+          <!-- remember me -->
+          <div class="rememberMe d-flex mt-3">
+            <input type="checkbox" formControlName="rememberMe">
+            <p class="mb-0 ms-2">Remember me</p>
+          </div>
+
+          <div class="horizontalLine my-2"></div>
+
+          <!-- forgotten password and signup -->
+          <div class="forgotten d-flex justify-content-between">
+            <!-- forgotten password -->
+            <a [routerLink]="['/auth/#']" routerLinkActive="router-link-active"
+              class="text-decoration-none forgottenPassword">Forgot Your
+              Password?</a>
+            <!-- signup -->
+            <a [routerLink]="['/auth/signup']" routerLinkActive="router-link-active"
+              class="text-decoration-none signUp">Sign
+              up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
