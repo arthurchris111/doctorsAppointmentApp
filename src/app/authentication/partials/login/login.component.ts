@@ -22,7 +22,7 @@ export class LoginComponent {
   buildLoginForm(): void {
     this.login = this.formBuilder.group({
       username: ['', [Validators.required]],
-      password: ['', [Validators.required]],
+      email: ['', [Validators.required]],
       rememberMe: ['', [Validators.required]],
     });
   }

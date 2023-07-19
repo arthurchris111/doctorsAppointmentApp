@@ -4,13 +4,13 @@
       <div class="card-body">
         <form [formGroup]="login" (ngSubmit)="onSubmit()" class="p-2">
           <!-- username -->
-          <label for="text" class="">Username</label>
+          <label for="text" class="">Email</label>
           <div class="form-item mb-3">
-            <input type="text" autocomplete="off" required class="form-control  shadow-none" formControlName="username"
-              placeholder="Username">
-            <div class="error" *ngIf="(login.get('username')?.invalid && submitted)">
-              <small class="text-danger" *ngIf="login.get('username')?.errors?.['required'] ">
-                First name required
+            <input type="text" autocomplete="off" required class="form-control  shadow-none" formControlName="email"
+              placeholder="email">
+            <div class="error" *ngIf="(login.get('email')?.invalid && submitted)">
+              <small class="text-danger" *ngIf="login.get('email')?.errors?.['required'] ">
+                email required
               </small>
             </div>
           </div>
@@ -22,10 +22,10 @@
               formControlName="password" placeholder="Password">
             <span class="togglePassword float-end opacity-75">
               <span class=" img-fluid" (click)="togglePassword()" aria-hidden="true" *ngIf="!show">
-                <i class="fa-sharp fa-solid fa-eye-slash" style="color: #000000;"></i>
+                <img src="../../../../assets/images/hide.png" width="20" height="20" alt="">
               </span>
               <span class="view  img-fluid" (click)="togglePassword()" aria-hidden="true" *ngIf="show">
-                <i class="fa-sharp fa-solid fa-eye" style="color: #000000;"></i>
+                <img src="../../../../assets/images/view.png" width="20" height="20" alt="">
               </span>
             </span>
             <div class="error" *ngIf="(login.get('password')?.invalid && submitted)">
