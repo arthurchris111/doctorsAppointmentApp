@@ -50,24 +50,15 @@
           <!-- button -->
           <button class="btn btn-primary w-100 shadow-none" type="submit">Log In</button>
 
-          <!-- remember me -->
-          <div class="rememberMe d-flex mt-3">
-            <input type="checkbox" formControlName="rememberMe">
-            <p class="mb-0 ms-2">Remember me</p>
-          </div>
-
           <div class="horizontalLine my-2"></div>
 
-          <!-- forgotten password and signup -->
-          <div class="forgotten d-flex justify-content-between">
-            <!-- forgotten password -->
-            <a [routerLink]="['/auth/#']" routerLinkActive="router-link-active"
-              class="text-decoration-none forgottenPassword">Forgot Your
-              Password?</a>
-            <!-- signup -->
-            <a [routerLink]="['/auth/signup']" routerLinkActive="router-link-active"
-              class="text-decoration-none signUp">Sign
-              up</a>
+          <!-- signup -->
+          <div class="d-flex justify-content-start">
+            <p> Already a member
+              <a [routerLink]="['/auth/login']" routerLinkActive="router-link-active"
+                class="text-decoration-none member fw-bold signUp">Login</a>
+            </p>
+
           </div>
         </form>
       </div>
