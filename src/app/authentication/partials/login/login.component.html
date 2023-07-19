@@ -22,10 +22,10 @@
               formControlName="password" placeholder="Password">
             <span class="togglePassword float-end opacity-75">
               <span class=" img-fluid" (click)="togglePassword()" aria-hidden="true" *ngIf="!show">
-                <img src="../../../../assets/images/hide.png" width="20" height="20" alt="">
+                <img src="../../../../assets/images/hide.png" width="18" height="18" alt="">
               </span>
               <span class="view  img-fluid" (click)="togglePassword()" aria-hidden="true" *ngIf="show">
-                <img src="../../../../assets/images/view.png" width="20" height="20" alt="">
+                <img src="../../../../assets/images/view.png" width="18" height="18" alt="">
               </span>
             </span>
             <div class="error" *ngIf="(login.get('password')?.invalid && submitted)">

@@ -21,8 +21,8 @@ export class LoginComponent {
 
   buildLoginForm(): void {
     this.login = this.formBuilder.group({
-      username: ['', [Validators.required]],
       email: ['', [Validators.required]],
+      password: ['', [Validators.required]],
       rememberMe: ['', [Validators.required]],
     });
   }
