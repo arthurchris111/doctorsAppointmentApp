@@ -69,8 +69,6 @@ ul,a {
   text-decoration: none;
 }
 
-
-
 .mt-70{
   margin-top:70px;
 }
@@ -147,8 +145,6 @@ input[type=password]{
  font-size: 12px;
 }
 
-
-
 .member{
   color: #5DADE2!important;
   &:hover{
@@ -156,6 +152,9 @@ input[type=password]{
   }
 }
 
+.centered{
+  min-height: 80vh;
+}
 
 // .hoverZoom{
 //   overflow: hidden;
