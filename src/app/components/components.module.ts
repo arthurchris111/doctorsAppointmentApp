@@ -9,6 +9,6 @@ import { TabsComponent } from './tabs/tabs.component';
 @NgModule({
   declarations: [ComponentsComponent, AccordionComponent, TabsComponent],
   imports: [CommonModule, RouterModule, NgbModule],
-  exports: [ComponentsComponent, AccordionComponent],
+  exports: [ComponentsComponent, AccordionComponent, TabsComponent],
 })
 export class ComponentsModule {}
