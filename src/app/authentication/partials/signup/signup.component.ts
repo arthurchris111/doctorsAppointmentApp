@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { services } from 'src/app/service/services';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -16,7 +17,11 @@ export class SignupComponent {
   user: boolean = false;
   password: any;
 
-  constructor(private formBuilder: FormBuilder, private route: Router) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private route: Router,
+    private services: services
+  ) {}
 
   buildLoginForm(): void {
     this.signup = this.formBuilder.group({
@@ -29,6 +34,7 @@ export class SignupComponent {
   ngOnInit(): void {
     this.buildLoginForm();
     this.password = 'password';
+    this.services.loginDetails();
   }
 
   togglePassword() {
@@ -45,5 +51,11 @@ export class SignupComponent {
     }
 
     console.log(this.signup.value);
+
+    this.services.signupData(
+      postData.username,
+      postData.email,
+      postData.password
+    );
   }
 }

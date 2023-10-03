@@ -1,6 +1,8 @@
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { signupDetails } from '../models/auth-models/signup.model';
+import { loginDetails } from '../models/auth-models/login.model';
 
 @Injectable({ providedIn: 'root' })
 export class services {
@@ -16,5 +18,22 @@ export class services {
       users = [user];
     }
     localStorage.setItem('Users', JSON.stringify(user));
+  }
+
+  //posting user details to firebase
+  signupData(username: any, email: any, password: any) {
+    const postData: signupDetails = {
+      username: username,
+      email: email,
+      password: password,
+    };
+    this.http.post('', postData).subscribe((responseData) => {
+      console.log(responseData);
+    });
+  }
+
+  // getting user details from firebase
+  loginDetails() {
+    return this.http.get<any>('');
   }
 }
