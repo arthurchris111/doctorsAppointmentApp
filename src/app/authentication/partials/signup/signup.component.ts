@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { signupDetails } from 'src/app/models/auth-models/signup.model';
 import { services } from 'src/app/service/services';
 @Component({
   selector: 'app-signup',
@@ -42,7 +43,7 @@ export class SignupComponent {
     console.log(this.show);
   }
 
-  onSubmit() {
+  onSubmit(postData: signupDetails) {
     this.submitted = true;
     this.isFetching = true;
 
