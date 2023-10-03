@@ -27,13 +27,20 @@ export class services {
       email: email,
       password: password,
     };
-    this.http.post('', postData).subscribe((responseData) => {
-      console.log(responseData);
-    });
+    this.http
+      .post(
+        'https://doctor-sappointment-a60e3-default-rtdb.firebaseio.com/posts.json',
+        postData
+      )
+      .subscribe((responseData) => {
+        console.log(responseData);
+      });
   }
 
   // getting user details from firebase
   loginDetails() {
-    return this.http.get<any>('');
+    return this.http.get<any>(
+      'https://doctor-sappointment-a60e3-default-rtdb.firebaseio.com/post.json'
+    );
   }
 }
