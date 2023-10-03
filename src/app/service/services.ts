@@ -17,7 +17,4 @@ export class services {
     }
     localStorage.setItem('Users', JSON.stringify(user));
   }
-
-
-
 }
