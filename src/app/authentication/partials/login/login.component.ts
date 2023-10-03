@@ -39,7 +39,6 @@ export class LoginComponent {
 
   togglePassword() {
     this.show = !this.show;
-    console.log(this.show);
   }
 
   onSubmit() {
