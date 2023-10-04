@@ -9,16 +9,16 @@ export class services {
   constructor(private http: HttpClient, private route: Router) {}
 
   // //saving user details to local storage
-  // addUser(user: any) {
-  //   let users = [];
-  //   if (localStorage.getItem('Users')) {
-  //     users = JSON.parse(localStorage.getItem('Users') as any);
-  //     users = [user, users];
-  //   } else {
-  //     users = [user];
-  //   }
-  //   localStorage.setItem('Users', JSON.stringify(user));
-  // }
+  addUser(user: any) {
+    let users = [];
+    if (localStorage.getItem('Users')) {
+      users = JSON.parse(localStorage.getItem('Users') as any);
+      users = [user, users];
+    } else {
+      users = [user];
+    }
+    localStorage.setItem('Users', JSON.stringify(user));
+  }
 
   //adding user details to firebase
   signupData(username: any, email: any, password: any) {
@@ -29,7 +29,7 @@ export class services {
     };
     this.http
       .post(
-        'https://doctor-sappointment-a60e3-default-rtdb.firebaseio.com/posts.json',
+        'https://doctor-s-appointments-default-rtdb.firebaseio.com/posts.json',
         postData
       )
       .subscribe((responseData) => {
@@ -40,7 +40,7 @@ export class services {
   // getting user details from firebase
   loginDetails() {
     return this.http.get<any>(
-      'https://doctor-sappointment-a60e3-default-rtdb.firebaseio.com/post.json'
+      'https://doctor-s-appointments-default-rtdb.firebaseio.com/posts.json'
     );
   }
 }

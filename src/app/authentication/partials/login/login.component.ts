@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { PostLogin } from 'src/app/models/auth-models/post.model';
 import { services } from 'src/app/service/services';
 
 @Component({
@@ -33,6 +34,7 @@ export class LoginComponent {
   }
 
   ngOnInit(): void {
+    this.login;
     this.buildLoginForm();
     this.password = 'password';
   }
@@ -41,10 +43,9 @@ export class LoginComponent {
     this.show = !this.show;
   }
 
-  onSubmit() {
-    this.submitted = true;
+  //login
+  signIn() {
     this.isFetching = true;
-
     this.service.loginDetails().subscribe({
       next: (responseData: any) => {
         this.isFetching = false;
@@ -57,24 +58,30 @@ export class LoginComponent {
 
         const user = userArray.find((result: any) => {
           return (
-            result.username === this.login.value.email &&
+            result.username === this.login.value.username &&
             result.password === this.login.value.password
           );
         });
 
-        // if (user) {
-        //   this.route.navigate(['home']);
-        //   alert('Login Successfully');
-        // } else {
-        //   alert('user not found');
-        // }
+        if (user) {
+          this.route.navigate(['home']);
+          alert('Login Successfully');
+        } else {
+          alert('user not found');
+        }
       },
     });
+  }
+
+  onSubmit(postData: PostLogin) {
+    this.submitted = true;
+    this.isFetching = true;
 
     if (this.login.invalid) {
       return;
+    } else {
+      this.signIn();
     }
-
     console.log(this.login.value);
   }
 }

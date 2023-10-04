@@ -53,6 +53,11 @@ export class SignupComponent {
       this.route.navigate(['/auth/login']);
     }
 
+    //saving user details to local storage
+    this.user = Object.assign(this.user, this.signup.value);
+    this.services.addUser(this.user);
+    console.log(this.signup.value);
+
     console.log(this.signup.value);
 
     this.services.signupData(
