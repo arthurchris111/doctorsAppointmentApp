@@ -20,7 +20,7 @@ export class services {
     localStorage.setItem('Users', JSON.stringify(user));
   }
 
-  //posting user details to firebase
+  //adding user details to firebase
   signupData(username: any, email: any, password: any) {
     const postData: signupDetails = {
       username: username,

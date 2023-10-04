@@ -62,12 +62,12 @@ export class LoginComponent {
           );
         });
 
-        if (user) {
-          this.route.navigate(['home']);
-          alert('Login Successfully');
-        } else {
-          alert('user not found');
-        }
+        // if (user) {
+        //   this.route.navigate(['home']);
+        //   alert('Login Successfully');
+        // } else {
+        //   alert('user not found');
+        // }
       },
     });
 

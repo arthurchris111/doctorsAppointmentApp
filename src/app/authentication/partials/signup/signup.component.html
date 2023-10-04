@@ -2,7 +2,7 @@
   <div class="row m-0 d-flex justify-content-center align-items-center">
     <div class="card mt-5">
       <div class="card-body">
-        <form [formGroup]="signup" (ngSubmit)="onSubmit()" class="p-2">
+        <form [formGroup]="signup" (ngSubmit)="onSubmit(signup.value)" class="p-2">
           <!-- email -->
           <label for="text" class="">Email</label>
           <div class="form-item mb-3">
