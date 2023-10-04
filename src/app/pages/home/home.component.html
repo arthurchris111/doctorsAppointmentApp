@@ -5,7 +5,8 @@
         <h1 class="fs-80 fw-bolder text-light">We Care</h1>
         <h1 class="fs-80 text-light fw-bolder">About Your Health</h1>
         <h4 class="fs-6 text-white">Your Health is Our Top Priority with Comprehensive, Affordable medical</h4>
-        <button type="button" class="btn btn-primary btn-lg mt-2 rounded-5 fs-6">Make An Appointment</button>
+        <button [routerLink]="['/auth/login']" routerLinkActive="router-link-active" type="button"
+          class="btn btn-primary btn-lg mt-2 rounded-5 fs-6">Make An Appointment</button>
       </div>
     </div>
   </div>
@@ -157,4 +158,4 @@
   <app-accordion></app-accordion>
 </div>
 
-  <app-tabs></app-tabs>
+<app-tabs></app-tabs>

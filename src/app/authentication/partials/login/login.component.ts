@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { loginDetails } from 'src/app/models/auth-models/login.model';
 import { PostLogin } from 'src/app/models/auth-models/post.model';
 import { services } from 'src/app/service/services';
 
@@ -44,7 +45,7 @@ export class LoginComponent {
   }
 
   //login
-  signIn() {
+  Login() {
     this.isFetching = true;
     this.service.loginDetails().subscribe({
       next: (responseData: any) => {
@@ -73,14 +74,14 @@ export class LoginComponent {
     });
   }
 
-  onSubmit(postData: PostLogin) {
+  onSubmit(loginDetails: any) {
     this.submitted = true;
     this.isFetching = true;
 
     if (this.login.invalid) {
       return;
     } else {
-      this.signIn();
+      this.Login();
     }
     console.log(this.login.value);
   }
