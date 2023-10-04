@@ -30,11 +30,11 @@ min-height: 200px;
 }
 
 .card-bg{
-  background-color: #5DADE2;
+  background-color: #85c8f5;
 }
 
 .primaryColor{
-  color: #5DADE2;
+  color: #badef7;
 }
 
 .fs-60{
@@ -50,6 +50,9 @@ min-height: 200px;
 //   background-color: #d3e7f4;
 //   padding: 3px;
 // }
+.mt-20 {
+  margin-top: 7% !important;
+}
 
 .img-fluid{
   height: auto;
@@ -156,16 +159,4 @@ input[type=password]{
   min-height: 80vh;
 }
 
-// .hoverZoom{
-//   overflow: hidden;
-//   margin: 0 auto;
-// }
 
-// .hoverZoom img {
-//   width: 100%;
-//   transition: 0.5s all ease-in-out;
-// }
-
-// .hoverZoom:hover img {
-//   transform: scale(1.5);
-// }

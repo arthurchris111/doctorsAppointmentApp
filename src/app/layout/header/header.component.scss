@@ -1,22 +1,27 @@
-.header-bg{
-  background-color: #5DADE2;
+.header-bg {
+  background-color: #5dade2;
 }
 
-
-.nav-link,a,li {
-  color: #145683!important;
+.nav-link,
+li {
+  color: #145683 !important;
   font-size: 17px;
   text-decoration: none !important;
   &:hover {
-    color: #5DADE2!important;
+    color: #5dade2 !important;
   }
 }
 
+a {
+  color: #145683 !important;
+  font-size: 17px;
+  text-decoration: none !important;
+}
+
 .navbar-nav .nav-link.active {
-  color:#5DADE2!important;
+  color: #5dade2 !important;
 }
 
 .navbar-toggler:focus {
   box-shadow: unset !important;
 }
-
