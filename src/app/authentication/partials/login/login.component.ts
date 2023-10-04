@@ -26,7 +26,7 @@ export class LoginComponent {
 
   buildLoginForm(): void {
     this.login = this.formBuilder.group({
-      email: ['', [Validators.required]],
+      username: ['', [Validators.required]],
       password: ['', [Validators.required]],
       rememberMe: ['', [Validators.required]],
     });
@@ -57,7 +57,7 @@ export class LoginComponent {
 
         const user = userArray.find((result: any) => {
           return (
-            result.email === this.login.value.email &&
+            result.username === this.login.value.email &&
             result.password === this.login.value.password
           );
         });

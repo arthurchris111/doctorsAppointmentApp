@@ -49,6 +49,8 @@ export class SignupComponent {
 
     if (this.signup.invalid) {
       return;
+    } else {
+      this.route.navigate(['/auth/login']);
     }
 
     console.log(this.signup.value);

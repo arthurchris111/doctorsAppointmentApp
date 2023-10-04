@@ -8,17 +8,17 @@ import { loginDetails } from '../models/auth-models/login.model';
 export class services {
   constructor(private http: HttpClient, private route: Router) {}
 
-  //saving user details to local storage
-  addUser(user: any) {
-    let users = [];
-    if (localStorage.getItem('Users')) {
-      users = JSON.parse(localStorage.getItem('Users') as any);
-      users = [user, users];
-    } else {
-      users = [user];
-    }
-    localStorage.setItem('Users', JSON.stringify(user));
-  }
+  // //saving user details to local storage
+  // addUser(user: any) {
+  //   let users = [];
+  //   if (localStorage.getItem('Users')) {
+  //     users = JSON.parse(localStorage.getItem('Users') as any);
+  //     users = [user, users];
+  //   } else {
+  //     users = [user];
+  //   }
+  //   localStorage.setItem('Users', JSON.stringify(user));
+  // }
 
   //adding user details to firebase
   signupData(username: any, email: any, password: any) {

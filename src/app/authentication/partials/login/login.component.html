@@ -4,22 +4,22 @@
       <div class="card-body">
         <form [formGroup]="login" (ngSubmit)="onSubmit()" class="p-2">
           <!-- username -->
-          <label for="text" class="">Email</label>
+          <label for="email">Username</label>
           <div class="form-item mb-3">
-            <input type="text" autocomplete="off" required class="form-control  shadow-none" formControlName="email"
-              placeholder="email">
-            <div class="error" *ngIf="(login.get('email')?.invalid && submitted)">
-              <small class="text-danger" *ngIf="login.get('email')?.errors?.['required'] ">
-                email required
+            <input type="text" autocomplete="off" name="username" id="username" required
+              class="form-control shadow-none" formControlName="username" placeholder="username">
+            <div class="error" *ngIf="(login.get('username')?.invalid && submitted)">
+              <small class="text-danger" *ngIf="login.get('username')?.errors?.['required'] ">
+                username required
               </small>
             </div>
           </div>
 
           <!--form password -->
-          <label for="text">Password</label>
+          <label for="password">Password</label>
           <div class="form-item mb-3">
-            <input [type]="show?'text':'password'" autocomplete="off" required class="form-control  shadow-none "
-              formControlName="password" placeholder="Password">
+            <input [type]="show?'text':'password'" id="password" name="password" autocomplete="off" required
+              class="form-control shadow-none " formControlName="password" placeholder="Password">
             <span class="togglePassword float-end opacity-75">
               <span class=" img-fluid" (click)="togglePassword()" aria-hidden="true" *ngIf="!show">
                 <img src="../../../../assets/images/hide.png" width="18" height="18" alt="">
