@@ -8,7 +8,7 @@ import { loginDetails } from '../models/auth-models/login.model';
 export class services {
   constructor(private http: HttpClient, private route: Router) {}
 
-  // //saving user details to local storage
+  // //saving user details to local storage.
   addUser(user: any) {
     let users = [];
     if (localStorage.getItem('Users')) {
@@ -20,7 +20,7 @@ export class services {
     localStorage.setItem('Users', JSON.stringify(user));
   }
 
-  //adding user details to firebase
+  //adding user details to firebase.
   signupData(username: any, email: any, password: any) {
     const postData: signupDetails = {
       username: username,
