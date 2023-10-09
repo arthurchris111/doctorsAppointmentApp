@@ -25,6 +25,7 @@ import { AngularFireModule } from '@angular/fire/compat';
       messagingSenderId: '672588399008',
       appId: '1:672588399008:web:2ee5a3750d46bd5b4c64c5',
     }),
+    AngularFireModule,
   ],
 })
 export class AuthenticationModule {}
